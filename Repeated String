@@ -1,0 +1,19 @@
+def repeatedString(s,n):
+    c = 0
+    for i in s:
+        if i == 'a':
+            c += 1
+
+    q = int(n / len(s))
+    r = int(n % len(s))
+    if r == 0:
+        c *= q
+
+    else:
+        x = 0
+        for i in range(r):
+            if s[i] == 'a':
+                x += 1
+        c = c*q + x
+
+    return int(c)
