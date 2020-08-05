@@ -1,0 +1,9 @@
+def swap_case(n):
+    s=""
+    for i in range(len(n)):
+        if n[i]==n[i].upper():
+            s=s+n[i].lower()
+        elif n[i]==n[i].lower():
+            s=s+n[i].upper()
+
+    return s
