@@ -1,0 +1,18 @@
+from itertools import product
+a=[]
+b=[]
+n1= input().split()
+n2= input().split()
+
+for i in n1:
+    i=int(i)
+    a.append(i)
+
+for i in n2:
+    i=int(i)
+    b.append(i)
+
+a=list(product(a, b))
+
+for i in a:
+    print(i, end=" ")
